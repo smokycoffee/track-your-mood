@@ -71,12 +71,14 @@ export const MoodPicker: React.FC<MoodPickerProps> = ({ handleSelectMood }) => {
 
 const styles = StyleSheet.create({
   containerBox: {
+    height: 250,
     borderColor: theme.colorPurple,
     borderWidth: 2,
     margin: 10,
     padding: 20,
     borderRadius: 10,
     backgroundColor: 'rgba(0,0,0,0.2)',
+    justifyContent: 'space-between',
   },
   moodOptions: {
     flexDirection: 'row',
@@ -97,30 +99,28 @@ const styles = StyleSheet.create({
   },
   descriptionText: {
     color: theme.colorPurple,
-    fontWeight: 'bold',
     textAlign: 'center',
-    fontSize: 10,
+    fontSize: 12,
+    fontFamily: theme.fontFamilyBold,
   },
   heading: {
     fontSize: 20,
-    fontWeight: 'bold',
     letterSpacing: 1,
     textAlign: 'center',
-    marginBottom: 20,
     color: 'white',
+    fontFamily: theme.fontFamilyBold,
   },
   button: {
     backgroundColor: theme.colorPurple,
     width: 150,
     borderRadius: 20,
-    marginTop: 20,
     alignSelf: 'center',
     padding: 10,
   },
   buttonText: {
     color: theme.colorWhite,
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontFamily: theme.fontFamilyBold,
   },
   image: {
     alignSelf: 'center',
